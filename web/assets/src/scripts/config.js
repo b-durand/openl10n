@@ -11,6 +11,8 @@ require.config({
     'backbone.babysitter': '../vendor/backbone.babysitter/lib/backbone.babysitter',
     'backbone.select': '../vendor/backbone.select/dist/amd/backbone.select',
     'backbone.queryparams': '../vendor/backbone-query-parameters/backbone.queryparams',
+    'backbone-forms': '../vendor/backbone-forms/distribution/backbone-forms.min',
+    'backbone-forms.b3': '../vendor/backbone-forms/distribution/templates/bootstrap3',
     'marionette': '../vendor/marionette/lib/core/amd/backbone.marionette',
     'underscore': '../vendor/underscore/underscore',
     'text': '../vendor/requirejs-text/text',
@@ -30,6 +32,9 @@ require.config({
       exports: 'Backbone'
     },
     'backbone.queryparams': {
+      deps: ['backbone'],
+    },
+    'backbone-forms': {
       deps: ['backbone'],
     }
   },

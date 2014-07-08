@@ -20,6 +20,17 @@ define([
       default_locale: 'en',
     },
 
+    schema: {
+      name: {validators: ['required'], editorClass: 'form-control input-lg'},
+      slug: {validators: ['required'], editorClass: 'form-control input-lg'},
+      default_locale: {type: 'Select', options: [
+        {val: 'en', label: 'English (en)'},
+        {val: 'fr', label: 'French (fr)'},
+        {val: 'it', label: 'Italian (it)'},
+        {val: 'es', label: 'Spanish (es)'}
+      ], title: 'Default locale', editorClass: 'form-control input-lg'}
+    },
+
     validate: function(attrs, options) {
       var errors = {};
 

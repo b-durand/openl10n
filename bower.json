@@ -23,6 +23,7 @@
     "requirejs-text": "~2.0.10",
     "requirejs-tpl-jfparadis": "*",
     "backbone.select": "~1.2.6",
-    "backbone-query-parameters": "~0.3.0"
+    "backbone-query-parameters": "~0.3.0",
+    "backbone-forms": "ae3f60fe16b2fa52c09279c00c63fc607b3eec30"
   }
 }
